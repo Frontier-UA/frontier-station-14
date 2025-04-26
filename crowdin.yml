@@ -1,3 +1,9 @@
 files:
-  - source: Resources/Locale/en-US
-    translation: Resources/Locale/uk-UA
+  - source: Resources/Locale/en-US/*.ftl
+    translation: Resources/Locale/%locale%/%original_file_name%
+    content_segmentation: false
+    translate_content: true
+    translate_attributes: false
+    labels:
+      - Fluent
+    file_format: plaintext
